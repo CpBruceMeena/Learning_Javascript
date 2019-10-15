@@ -1,1 +1,1 @@
-document.write(heading external file.);
+document.write("<h1>Heading external file.</h1>");
