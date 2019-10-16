@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Manipulations</title>
+  </head>
+  <script type="text/javascript">
+
+    function setNewImage(){
+      document.getElementById("img1").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVfwxxwq9l9juH87skw-MogAu3U60zxgste8nFiFt_WAQqPYnV";
+      <!-- Here we need to write the new source image path -->
+    }
+
+    function setOldImage(){
+        document.getElementById("img1").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf80NS-3wrzh7TWYnGr5OwFDUFMwy3pkofGbaiZwN71jGjbtWy";
+    }
+
+  </script>
+  <body>
+    <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTf80NS-3wrzh7TWYnGr5OwFDUFMwy3pkofGbaiZwN71jGjbtWy">
+  </body>
+</html>
