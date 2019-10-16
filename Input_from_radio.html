@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM manipulations</title>
+    <script type="text/javascript">
+
+        function fn(){
+          var temp1 = document.getElementById("temp1");
+          var temp2 = document.getElementById("temp2");
+
+          if(temp1.checked == true){
+            alert(temp1.value + "is checked");
+          }
+          else if(temp2.checked == true){
+            alert(temp2.value + "is checked");
+          }
+          else{
+            alert("no radio button is clicked");
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <input id="temp1" type="radio" name="text1" value="int">
+    int</input>
+    <input id="temp2" type="radio" name="text1" value="char">
+    char</input>
+
+    <button onclick="fn()" id = "btn1">click me</button>
+  </body>
+</html>
