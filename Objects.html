@@ -14,8 +14,20 @@
           document.write("<h3>this is the autopilot.</h3>");
         }
       }
-
       document.write("<h2>" + Car.car_brand + "</h2>");
+
+      function newcar(car_brand, car_color, price){
+        this.car_brand = car_brand;
+        this.car_color = car_color;
+        this.price = price;
+        this.autopilot = function(){
+          document.write("This car has autopilot.");
+        }
+      }
+
+<!--We can always add function and different variables from outside the class also. -->
+
+      var car2 = new newcar("Sunny", "Green", 30202);
 
     </script>
   </head>
