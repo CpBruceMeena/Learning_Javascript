@@ -6,14 +6,16 @@
     <script type="text/javascript">
 
         function fn(){
+          <!--Similar to getElementById we can also use getElementByTagName("")
+          like p tag, or div tag, or any other tag.  -->
           var temp1 = document.getElementById("temp1");
           var temp2 = document.getElementById("temp2");
 
           if(temp1.checked == true){
-            alert(temp1.value + "is checked");
+            alert(temp1.value + " is checked");
           }
           else if(temp2.checked == true){
-            alert(temp2.value + "is checked");
+            alert(temp2.value + " is checked");
           }
           else{
             alert("no radio button is clicked");
