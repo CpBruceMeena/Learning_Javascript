@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Selectors</title>
+  </head>
+  <body>
+    <h2>Selectors in JQuery</h2>
+    <button onclick="fn1()" id="btn1" type="button" name="button">Click me</button>
+  </body>
+  <script src="jquery_standard_code.js" type="text/javascript"></script>
+  <script>
+    function fn1(){
+         <!-- To access the selector we use jquery -->
+         <!-- The code is like  $("") -->
+         <!-- We need to put the id, class or attribute of the html element that we want to change -->
+         <!-- .class or #id -->
+         //$("h2").action; (Action is basically the method or the function that we'll be performing.)
+         $("h2").fadeToggle(2000);
+    }
+  </script>
+</html>
