@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JQueryUI Tooltip</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+  </head>
+  <body>
+    <div class="mydiv">
+      <h2>Tooltil in JQuery</h2>
+      <img title ="flower" id="myimg" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </div>
+  </body>
+  <script src="jquery_standard_code.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
+  <script type="text/javascript">
+    $("img").tooltip({
+//      track: true,
+      content: "Flower",
+      show:{effect: "bounce", duration: 3000}
+    });
+  </script>
+</html>
