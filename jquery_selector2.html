@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Selectors</title>
+  </head>
+  <style media="screen">
+    #firstH2{
+      color: blue;
+    }
+    .mydivs{
+      border: 4px solid red;
+      margin: 4px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <h2>Selectors up JQuery</h2>
+    <p>Outside div.</p>
+    <p>the other outside one.</p>
+    <div class="mydivs" id="firstdiv">
+      <p>this is the first div</p>
+      <p>this is the second paragraph</p>
+    </div>
+    <div class="mydivs" id="seconddiv">
+      <p>this is the second div</p>
+    </div>
+    <div class="mydivs" id="thirddiv">
+      <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div>
+    <div class="">
+      <p>this is para</p>
+    </div>
+
+    <div class="mydivs" id="thirddiv">
+      <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+      </ul>
+    </div>    
+    <button onclick="fn1()">Click me</button>
+  </body>
+  <script src="jquery_standard_code.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function fn1(){
+        $("li:even").fadeToggle(1000);
+      }
+    </script>
+</html>
