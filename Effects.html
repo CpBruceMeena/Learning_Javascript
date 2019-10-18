@@ -13,6 +13,17 @@
       margin: 4px;
       padding: 5px;
     }
+    #cube{
+      width : 50px;
+      height : 50px;
+      background-color : purple;
+      opacity : 0.5;
+      padding: 20px;
+      position: absolute;
+      color: white;
+      font-size: 30px;
+    }
+
   </style>
   <body>
     <h2>Selectors up JQuery</h2>
@@ -45,6 +56,8 @@
         <li>three</li>
       </ul>
     </div>
+    <button id="btn4" name="button">animate</button>
+    <p id="cube">Cube</p>
   </body>
   <script src="jquery_standard_code.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -61,6 +74,16 @@
         $("#btn3").click(function(){
           $("#firstdiv").slideToggle();
         });
+
+        $("#btn4").click(function(){
+          $("#cube").animate({left: '150px',
+          opacity: '1',
+          width: '100px',
+          height: '100px',
+          padding: "40px"
+          }, 1000);
+          // It takes 3 inputs features, first one is for css manipualttions, second one is time, and last is callbacks
+        })
       });
     </script>
 </html>
