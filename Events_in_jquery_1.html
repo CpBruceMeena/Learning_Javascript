@@ -18,6 +18,7 @@
     <h2>Selectors up JQuery</h2>
     <p>Outside div.</p>
     <p>the other outside one.</p>
+    <button id="btn1">Click me</button>
     <div class="mydivs" id="firstdiv">
       <p>this is the first div</p>
       <p>this is the second paragraph</p>
@@ -35,7 +36,7 @@
     <div class="">
       <p>this is para</p>
     </div>
-
+    <button id="btn2" name="button">new button</button>
     <div class="mydivs" id="thirddiv">
       <ul>
         <li>One</li>
@@ -43,15 +44,24 @@
         <li>three</li>
       </ul>
     </div>
-        <button id="btn1">Click me</button>
   </body>
   <script src="jquery_standard_code.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+
+        $("#btn1").mouseenter(fn1);
+        $("#btn1").mouseleave(fn2);
+
+        $("#btn2").hover(fn1, fn2);
+
         $("#btn1").click(fn1);
         function fn1(){
-          $("#firstdiv").fadeToggle();
+          $("#firstdiv").fadeOut();
         }
+        function fn2(){
+          $("#firstdiv").fadeIn();
+        }
+
       });
     </script>
 </html>
