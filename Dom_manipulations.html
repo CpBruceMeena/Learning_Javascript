@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Manipulations</title>
+    <style media="screen">
+      #div1{
+        border: 4px solid blue;
+        padding: 10px;
+        font-size: 20px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dom Manipulations</h1>
+    <button id="btn1">Append</button>
+    <button id="btn2">After</button>
+    <button id="btn3">Prepend</button>
+    <button id="btn4">Before</button>
+    <br><br>
+    <button id="btn5">Remove</button>
+    <button id="btn6">Empty</button>
+    <div class="mydivs" id="div1">
+      <p id="p1" class="p1class" value="hello world">this is the <strong> paragraph</strong> in the <i>second</i> section.</p>
+    </div>
+  </body>
+  <script src="jquery_standard_code.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#div1").append("<p>Second para in first division</p>");
+         });
+
+          $("#btn2").click(function(){
+            $("#div1").after("This is the after");
+          });
+
+        $("#btn3").click(function(){
+           $("#div1").prepend("This is the prepend");
+        });
+
+        $("#btn4").click(function(){
+           $("#div1").before("This is the before");
+        });
+
+        $("#btn5").click(function(){
+           $("#div1").remove();
+        });
+
+        $("#btn6").click(function(){
+           $("#div1").empty();
+        });
+
+
+      });
+  </script>
+</html>
