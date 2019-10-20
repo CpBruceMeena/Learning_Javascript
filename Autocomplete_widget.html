@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+        #mydivs{
+          border: 3px solid black;
+          padding: 10px;
+          margin: 4px;
+        }
+    </style>
+    <title>Autocomplete in JQueryUI</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+  </head>
+  <body>
+    <h1>Introduction to JQuery UI</h1>
+    <div id="mydivs" class="">
+      <label>Enter you favorite city</label>
+      <input id="citytextbox" type="text" placeholder="Enter the city name">
+    </div>
+  </body>
+  <script src="jquery_standard_code.js"></script>
+  <script src="jqueryui/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function(){
+      var mycities = ["Mumbai", "Pune", "Ambala", "Kota", "Udaipur", "Jaipur"];
+      $("#citytextbox").autocomplete({
+        source: mycities
+      },
+      {
+        autoFocus: true,
+        delay: 0
+      });
+    })
+  </script>
+
+</html>
